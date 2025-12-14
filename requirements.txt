@@ -1,18 +1,18 @@
-# 1. NEW: Upgrade Streamlit to allow Pillow 11.x (Streamlit 1.34.0+)
-streamlit>=1.34.0
+# Streamlit versi lebih baru untuk kompatibilitas Pillow
+streamlit>=1.34.0 
 
-# 2. Unpin OpenCV to use the latest Python 3.13 compatible wheel
-opencv-python-headless
+# Ganti ke versi HEADLESS untuk menghindari masalah grafis/GUI di cloud
+opencv-python-headless 
 
-# 3. Use Pillow 11.x, which has wheels for Python 3.13
+# Pillow versi kompatibel
 pillow==11.0.0
 
-# 4. Keep numpy unpinned to ensure wheel installation
-numpy
-
-# 5. Keep setuptools
-setuptools>=69.0.3
-
-# 6. Keep PyTorch version compatible with Python 3.13
+# PyTorch versi kompatibel dengan Python 3.13
 torch==2.5.0
 
+# Tambahkan secara eksplisit untuk memastikan resolusi benar
+ultralytics 
+
+# Jaga paket-paket ini unpinned/stabil
+numpy
+setuptools>=69.0.3
