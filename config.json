@@ -1,0 +1,58 @@
+{
+  "app": {
+    "name": "YOLO BISINDO Predictor",
+    "version": "1.0.0",
+    "description": "Aplikasi deteksi dan klasifikasi gambar dengan YOLO",
+    "author": "PCD Project Team"
+  },
+  "models": {
+    "classification": {
+      "path": "yolov8n-cls.pt",
+      "name": "YOLOv8 Nano Classification",
+      "type": "classification",
+      "description": "Model klasifikasi untuk mengidentifikasi jenis objek"
+    },
+    "detection": {
+      "path": "best.pt",
+      "name": "Custom Detection Model",
+      "type": "detection",
+      "description": "Model deteksi untuk mengidentifikasi lokasi dan jenis objek"
+    },
+    "tflite_float32": {
+      "path": "best_float32.tflite",
+      "name": "TFLite Float32",
+      "type": "detection",
+      "description": "Model TFLite optimized untuk mobile (32-bit)"
+    },
+    "tflite_float16": {
+      "path": "best_float16.tflite",
+      "name": "TFLite Float16",
+      "type": "detection",
+      "description": "Model TFLite optimized untuk mobile (16-bit)"
+    }
+  },
+  "settings": {
+    "default_confidence": 0.5,
+    "min_confidence": 0.0,
+    "max_confidence": 1.0,
+    "webcam_resolution": [640, 480],
+    "webcam_fps": 30,
+    "supported_image_formats": ["jpg", "jpeg", "png", "bmp"],
+    "supported_video_formats": ["mp4", "mov", "avi"],
+    "max_file_size_mb": 200
+  },
+  "ui": {
+    "primary_color": "#FF6B6B",
+    "secondary_color": "#4ECDC4",
+    "success_color": "#45B7D1",
+    "background_color": "#0F0F1E",
+    "text_color": "#FFFFFF",
+    "theme": "dark"
+  },
+  "performance": {
+    "cache_models": true,
+    "use_gpu": true,
+    "batch_size": 1,
+    "inference_device": "auto"
+  }
+}

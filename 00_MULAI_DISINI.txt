@@ -1,0 +1,139 @@
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║          🤖 YOLO BISINDO PREDICTOR - README 🤖          ║
+║                                                           ║
+║            Aplikasi AI untuk Deteksi Gambar              ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+
+📌 MULAI DISINI:
+
+Pilih salah satu:
+
+1. INGIN LANGSUNG PAKAI?
+   → Buka file: START_HERE.txt
+
+2. INGIN PANDUAN CEPAT (5 MENIT)?
+   → Buka file: QUICK_START.md
+
+3. INGIN GUIDE INTERAKTIF?
+   → Buka file: index.html (di browser)
+
+4. SUDAH SIAP JALANKAN?
+   → Double-click: run.bat ← MULAI APLIKASI!
+
+═══════════════════════════════════════════════════════════
+
+📁 FILE PENTING:
+
+APPLICATION FILES:
+  • yolo_bisindo.py        ← Aplikasi utama
+  • utils.py               ← Helper functions
+  • config.json            ← Pengaturan
+
+LAUNCHER (Jalankan Aplikasi):
+  • run.bat                ← DOUBLE-CLICK INI! ⭐
+  • run.ps1                ← Alternative
+  • launcher.py            ← Alternative
+
+DOCUMENTATION (Baca):
+  • START_HERE.txt         ← Baca pertama!
+  • QUICK_START.md         ← Panduan cepat
+  • README.md              ← Dokumentasi lengkap
+  • CHEAT_SHEET.md         ← Reference cepat
+  • index.html             ← Guide interaktif
+
+TEST:
+  • test.bat               ← Cek sistem
+
+═══════════════════════════════════════════════════════════
+
+✨ FITUR:
+
+✓ Upload Gambar          - Prediksi JPG/PNG/BMP
+✓ Webcam Real-time       - Live detection dari kamera
+✓ Kamera Handphone       - Upload dari phone camera
+✓ Modern UI              - Dark theme dengan gradients
+✓ Multiple Models        - Classification & Detection
+✓ Real-time FPS          - Monitor performa
+
+═══════════════════════════════════════════════════════════
+
+🚀 CARA JALANKAN:
+
+CARA 1 (PALING MUDAH):
+  1. Double-click: run.bat
+  2. Tunggu 2-5 menit (pertama kali)
+  3. Browser terbuka otomatis
+  4. Selesai! ✨
+
+CARA 2 (COMMAND LINE):
+  1. Buka Command Prompt / PowerShell
+  2. cd "C:\Users\DESKTOP\Documents\PCD Peoject"
+  3. pip install -r requirements.txt
+  4. streamlit run yolo_bisindo.py
+
+═══════════════════════════════════════════════════════════
+
+💻 REQUIREMENTS:
+
+• Windows 7 atau lebih baru
+• Python 3.8+
+• 2GB RAM
+• 6GB disk space
+• Internet (pertama kali)
+
+═══════════════════════════════════════════════════════════
+
+📖 DOKUMENTASI:
+
+Untuk Pemula:
+  → START_HERE.txt
+  → QUICK_START.md
+  → index.html
+
+Untuk Detail:
+  → README.md
+  → INSTALLATION_GUIDE.md
+
+Untuk Reference:
+  → CHEAT_SHEET.md
+  → FILE_MANIFEST.md
+
+Untuk Teknis:
+  → TECHNICAL_DOCUMENTATION.md
+
+═══════════════════════════════════════════════════════════
+
+❓ FAQ:
+
+Q: Apakah saya perlu tahu coding?
+A: Tidak! Tinggal double-click run.bat
+
+Q: Berapa lama untuk mulai?
+A: 2-5 menit (pertama), 10 detik (setelahnya)
+
+Q: Apakah perlu GPU?
+A: Tidak, CPU sudah cukup. GPU opsional untuk cepat
+
+Q: Gimana kalau ada error?
+A: Jalankan test.bat untuk diagnosa
+
+═══════════════════════════════════════════════════════════
+
+🎯 LANGKAH PERTAMA:
+
+1. Baca: START_HERE.txt (5 menit)
+2. Jalankan: Double-click run.bat
+3. Tunggu browser terbuka
+4. Coba upload gambar
+5. Nikmati! 🎉
+
+═══════════════════════════════════════════════════════════
+
+✅ STATUS: SIAP DIGUNAKAN
+
+Version: 1.0
+Date: December 2024
+
+═══════════════════════════════════════════════════════════

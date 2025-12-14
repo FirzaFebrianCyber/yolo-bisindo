@@ -1,0 +1,55 @@
+🚀 INSTRUKSI PUSH KE GITHUB
+
+Project sudah siap untuk di-push ke GitHub!
+
+📝 LANGKAH-LANGKAH:
+
+1. BUAT REPOSITORY DI GITHUB
+   - Buka https://github.com/new
+   - Nama repo: "yolo-bisindo" (atau nama lain sesuai preferensi)
+   - Description: "YOLO BISINDO Abjad Detector - Deteksi Abjad BISINDO dengan YOLOv8 & Streamlit"
+   - Pilih "Public" atau "Private" sesuai kebutuhan
+   - JANGAN check "Initialize this repository with..."
+   - Klik "Create repository"
+
+2. COPY GITHUB REPO URL
+   - Dari halaman GitHub repository baru, klik tombol "<> Code"
+   - Copy URL HTTPS (misalnya: https://github.com/USERNAME/yolo-bisindo.git)
+
+3. ADD REMOTE KE LOCAL GIT
+   - Buka PowerShell/Terminal
+   - Navigate ke folder project:
+     cd "C:\Users\DESKTOP\Documents\PCD Peoject"
+   
+   - Run command:
+     git remote add origin https://github.com/USERNAME/yolo-bisindo.git
+   
+   - Replace USERNAME dengan GitHub username Anda
+
+4. RENAME BRANCH (jika perlu)
+   - git branch -M main
+
+5. PUSH KE GITHUB
+   - git push -u origin main
+   
+   - Masukkan GitHub username & password/token jika diminta
+
+✅ SELESAI!
+
+Repository Anda sekarang tersedia di:
+https://github.com/USERNAME/yolo-bisindo
+
+📤 UNTUK PUSH PERUBAHAN DI MASA DEPAN:
+   git add .
+   git commit -m "Deskripsi perubahan Anda"
+   git push
+
+🚀 DEPLOY KE STREAMLIT CLOUD:
+   1. Buka https://share.streamlit.io
+   2. Login dengan GitHub account
+   3. Klik "Create app"
+   4. Pilih repository: yolo-bisindo
+   5. File utama: yolo_bisindo.py
+   6. Deploy!
+
+Selesai! Aplikasi akan live di Streamlit Cloud 🎉

@@ -1,0 +1,107 @@
+🚀 PUSH KE GITHUB - PETUNJUK LENGKAP
+
+=== STEP 1: BUAT REPOSITORY DI GITHUB ===
+
+1. Buka: https://github.com/new
+2. Repository name: yolo-bisindo
+3. Description: YOLO BISINDO Abjad Detector - Deteksi BISINDO dengan YOLOv8 & Streamlit
+4. Visibility: Public (jika ingin share) atau Private
+5. ❌ JANGAN check "Initialize this repository with a README, .gitignore, or license"
+6. Klik "Create repository"
+
+=== STEP 2: SETUP & PUSH (AUTO) ===
+
+Cara termudah - gunakan script PowerShell yang sudah dibuat:
+
+1. Buka PowerShell (Win + X, pilih Windows PowerShell)
+2. Navigate ke project folder:
+   cd "C:\Users\DESKTOP\Documents\PCD Peoject"
+
+3. Jalankan script setup:
+   .\setup-github.ps1
+
+4. Masukkan GitHub username Anda saat diminta
+5. Script akan otomatis:
+   - Menambahkan remote URL
+   - Rename branch ke 'main'
+   - Push semua files ke GitHub
+
+=== STEP 2 ALT: MANUAL PUSH ===
+
+Jika script tidak work, lakukan manual:
+
+1. Set GitHub username:
+   git config --global user.email "email@example.com"
+   git config --global user.name "Your Name"
+
+2. Add remote (GANTI USERNAME):
+   git remote add origin https://github.com/USERNAME/yolo-bisindo.git
+
+3. Rename branch:
+   git branch -M main
+
+4. Push:
+   git push -u origin main
+
+5. Masukkan GitHub Personal Access Token (jika diminta)
+   - Buat token di: https://github.com/settings/tokens
+   - Pilih: repo, gist
+   - Copy token, paste saat login
+
+=== STEP 3: VERIFY ===
+
+Setelah push selesai:
+1. Buka https://github.com/USERNAME/yolo-bisindo
+2. Pastikan semua files sudah terlihat
+3. ✅ Repository siap!
+
+=== STEP 4: DEPLOY KE STREAMLIT CLOUD ===
+
+1. Buka: https://share.streamlit.io
+2. Login dengan GitHub account
+3. Klik "New app"
+4. Pilih repository: USERNAME/yolo-bisindo
+5. Main file path: yolo_bisindo.py
+6. Klik "Deploy"
+7. Tunggu proses deploy selesai (2-5 menit)
+8. 🎉 Aplikasi Anda live di Streamlit Cloud!
+
+=== FUTURE UPDATES ===
+
+Untuk push perubahan selanjutnya:
+
+1. Buat/edit file
+2. Stage changes:
+   git add .
+
+3. Commit dengan pesan:
+   git commit -m "Deskripsi perubahan Anda"
+
+4. Push:
+   git push
+
+=== TROUBLESHOOTING ===
+
+❌ "fatal: A git repository already exists"
+→ Repo sudah ada, skip step 1
+
+❌ "Permission denied" saat push
+→ Setup SSH atau gunakan Personal Access Token
+→ https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+❌ "Repository not found"
+→ Pastikan repository sudah dibuat di GitHub
+→ Pastikan URL benar (GANTI USERNAME)
+
+❌ Authentication error
+→ Windows Credential Manager mungkin cache password lama
+→ Hapus credentials di Credential Manager > Windows Credentials
+
+=== TIPS ===
+
+✓ Gunakan .gitignore untuk exclude files yang tidak perlu
+✓ Commit regularly dengan pesan yang jelas
+✓ Push setelah setiap milestone
+✓ Update README dengan instruksi usage
+
+Selamat! 🎉 Project Anda sekarang di GitHub dan siap di-deploy!
