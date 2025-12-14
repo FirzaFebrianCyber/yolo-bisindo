@@ -1,18 +1,7 @@
-# Streamlit versi lebih baru untuk kompatibilitas Pillow
-streamlit>=1.34.0 
-
-# Ganti ke versi HEADLESS untuk menghindari masalah grafis/GUI di cloud
-opencv-python-headless 
-
-# Pillow versi kompatibel
+streamlit>=1.34.0
+opencv-python-headless # PASTIKAN INI YANG DIGUNAKAN
 pillow==11.0.0
-
-# PyTorch versi kompatibel dengan Python 3.13
 torch==2.5.0
-
-# Tambahkan secara eksplisit untuk memastikan resolusi benar
 ultralytics 
-
-# Jaga paket-paket ini unpinned/stabil
 numpy
 setuptools>=69.0.3
