@@ -1,19 +1,17 @@
-# 1. Keep desired Streamlit version
-streamlit==1.32.2
+# 1. NEW: Upgrade Streamlit to allow Pillow 11.x (Streamlit 1.34.0+)
+streamlit>=1.34.0
 
-# 2. Keep desired OpenCV version
-opencv-python==4.8.1.78
+# 2. Unpin OpenCV to use the latest Python 3.13 compatible wheel
+opencv-python
 
-# 3. FIX: Use a compatible Pillow version (<11) that supports Python 3.13.
-# Pillow 10.3.0 is the recommended maximum version for Streamlit 1.32.2.
-pillow==10.3.0
+# 3. Use Pillow 11.x, which has wheels for Python 3.13
+pillow==11.0.0
 
 # 4. Keep numpy unpinned to ensure wheel installation
 numpy
 
-# 5. Keep setuptools to help with builds (even if using wheels)
+# 5. Keep setuptools
 setuptools>=69.0.3
 
-# 6. FIX: Use a PyTorch version compatible with Python 3.13.9 (e.g., 2.5.0+)
-# We will use the oldest compatible version to minimize risk.
+# 6. Keep PyTorch version compatible with Python 3.13
 torch==2.5.0
